@@ -85,6 +85,7 @@ textarea {
 
 .add-form {
   margin-top: 40px;
+  width: 100%;
 }
 
 .form-control {
@@ -162,6 +163,11 @@ input:focus {
 @media (max-width: 768px) {
   .container {
     padding: 60px 30px;
+  }
+
+  .login-page .add-form.login {
+    /* width: 600px; */
+    max-width: 100%;
   }
 }
 
@@ -472,6 +478,13 @@ table tr th {
   }
 }
 
+@media (max-width: 660px) {
+  .login-page .add-form.login {
+    width: 200px;
+    min-width: 100%;
+  }
+}
+
 @media (max-width: 576px) {
   .books-list {
     grid-template-columns: 1fr;
@@ -498,9 +511,10 @@ p {
   text-align: center;
 }
 
-.login-page .add-form.login {
-  width: 600px;
-  max-width: 100%;
+.login-page .add-form,
+.login {
+  width: 100%;
+  min-width: 600px;
 }
 
 .login-page .add-form .error {
